@@ -1,0 +1,239 @@
+:root{
+    font-size: 16px;
+    font-weight:400 ;
+    box-sizing: border-box;
+    font-family:"ubuntu",sans-serif;
+    --rojo:#9f3647;
+    --texto-blanco:#ffffff;
+    --fondo-negro:black ;
+ 
+}
+/*rem es relativo al root
+el font-size es por defecto de 16 px.
+entonces = 2rem -->2* 16px = 32px */
+
+h2{
+    color: white;
+}
+.texto-blanco{
+    color: var(--texto-blanco);
+}
+
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+.main_btn_registrarse{
+    margin-top: 5vh;
+    text-decoration: none;
+    height: 9vh;
+    width: 5vw;
+    min-width: 15vw;
+    background-color:var(--rojo) ;
+    color: var(--texto-blanco);
+    border-radius: 6px;
+    border: none;
+    max-width: 25vw;
+    font-size: 1.1em;
+    font-weight: 700;
+
+    
+}
+/* ESPECIFICIDAD
+Inline > id > clase >tipo
+Importtant*/
+.main{
+    background-color: var(--fondo-negro);
+    background-image:
+    linear-gradient(to right top, #0000008a,#0000008a),
+    url(../imgs/banner-bg.jpg);
+   
+    height: 80vh;   /* vh altura relativa */
+    width: 100vw; /* vw ancho relativo */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 400px;
+}
+.main h1 {
+    font-size: 3rem;/*3 * 16px*/    
+    /*text-align: center;*/
+    padding-top: 5vh;
+}
+
+.main h2 {
+    font-size: 2rem;
+    padding-top: 5vh;
+    font-weight: 300;
+}
+.main_titulo{
+    padding-top: 20vh;
+    padding-bottom:5vh ;
+    font-size: 3em; /*unidad de medidad relativa */
+}
+.main_subtitulo{
+    margin-bottom: 5vh;
+
+}
+.iniciar_sesion_btn{
+    background-color: black;
+    color: white;
+    padding: 1vh;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+
+.header{
+   
+    background-color: var(--rojo);
+    font-size: 19px;
+    padding-top: 15px;
+    height:9vh;
+    width: 100vw;
+    min-height: 60px;
+    padding-bottom: 2vh;
+    
+}
+
+.header_logo{
+   /* height:5vh;*/
+    display: inline-block;
+    width:35vw;
+    margin-left: 30px;
+   /* font-size: 1rem;
+    padding: 1rem 1rem;
+    font-weight: 100;*/
+   
+}
+.header_menu{
+    /*height:10vh;
+    width: 45vw;
+    padding-top: 2vh;
+    font-size: 1rem;*/
+    padding-left: 4vw; 
+    display: inline-block;
+    margin-left: 26vw;
+    padding-top: 5vh;
+    /*margin-right: 0;*/
+}
+.header_menu a:hover {
+    background-color: var(--color-primario);
+    background-origin: inherit;
+    /*border: 1px solid var(--fondo-negro);*/
+    box-shadow: 1px 1px 1px 1px var(--fondo-negro);
+}
+
+.header_menu a{
+    text-decoration: none;
+    color:var(--texto-blanco);
+    display:inline-block;
+    padding: 10px;
+    font-size: .9em;
+    border-radius: 5px;
+}
+.header_logo a{
+    color:var(--texto-blanco);
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+
+}
+.header_logo h3{
+    display: inline;
+    font-weight: 100;
+}
+.busqueda{
+    text-align: center;
+    height: 50vh;
+    background-color:var(--fondo-negro) ;
+    color: var(--texto-blanco);
+    padding: 20vh;
+    font-size: 1.5rem;
+
+}
+.h2 + form{
+padding-top: 5vh;
+}
+.input_search{
+    padding: 1vw 3vh;
+    text-transform: capitalize;
+    border-radius: 25px;
+    width: 50vw;
+    border: none;
+    /*tph sacar borde ccuando hago foco*/
+}
+.button_search{
+    padding: 1vw 3vh;
+    text-transform: capitalize;
+    border-radius: 25px;
+    border: 2px solid var(--texto-blanco);
+    background-color: var(--rojo);
+    color: var(--texto-blanco);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.button_search:hover{
+    font-size: 1.1rem;
+}
+hr{
+    margin: 0 auto;
+}
+.elemento_fijo{
+position:fixed;
+top:10px;
+left: 10px;
+
+}
