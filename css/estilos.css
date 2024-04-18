@@ -7,11 +7,22 @@
     --texto-blanco:#ffffff;
     --fondo-negro:black ;
     --fondo-blanco:white;
- 
 }
+
 /*rem es relativo al root
 el font-size es por defecto de 16 px.
 entonces = 2rem -->2* 16px = 32px */
+body{
+    background-color: var(--fondo-negro);
+}
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
 
 h2{
     color: white;
@@ -20,13 +31,7 @@ h2{
     color: var(--texto-blanco);
 }
 
-*{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-}
+
 .ubuntu-light {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -74,21 +79,81 @@ h2{
     font-weight: 700;
     font-style: italic;
   }
+
+    .header{
+   
+        background-color: var(--rojo);
+        font-size: 19px;
+       padding-top: 2vh;
+        height:9vh;
+        width: 98.5vw;
+        min-height: 60px;
+       padding-bottom: 2vh;                                                                                                                                                                              
+       display: flex;
+       justify-content: space-between;
+       /* display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-right: 40ppx;
+        padding:1.5rem 0 ;*/
+        
+    }
+    .header_logo{
+        /* height:5vh;*/
+         display: inline-block;
+         margin-left: 2vw;
+         margin-top: 2rem;
+         /*width:35vw;
+       
+        font-size: 1rem;
+         padding: 1rem 1rem;
+         font-weight: 100;*/
+        
+     }
+     .header_menu{
+        /* height:10vh;
+         width: 45vw;
+         padding-top: 2vh;
+         font-size: 1rem;*/
+        
+         display: flex;
+        /*padding-left: 6vw; */
+         align-items: center;
+        /* margin-left: 9em;
+         padding-top: 1em;*/
+     
+         margin-right: 2rem;
+         margin-top: 1.5rem;
+        
+     }
+
+     .iniciar_sesion_btn{
+        background-color: black;
+        color: white;
+        
+        /*padding: 1vh;*/
+        border-radius: 10%;
+        text-decoration: none;
+    }
+  
+  
   
 .main_btn_registrarse{
-    margin-top: 5vh;
-    text-decoration: none;
-    height: 9vh;
     width: 5vw;
     min-width: 15vw;
-    background-color:var(--rojo) ;
-    color: var(--texto-blanco);
-    border-radius: 6px;
+    height: 9vh;
+    min-height: 50px;
+    margin-top: 5vh;
     border: none;
-    max-width: 25vw;
+    border-radius: 6px;
     font-size: 1.1em;
     font-weight: 700;
-    box-shadow: #ffffff;
+    background-color:var(--rojo) ;
+    color: var(--texto-blanco);
+
+    text-decoration: none;
+   
 }
   
 .main_btn_registrarse:hover{
@@ -105,12 +170,15 @@ Importtant*/
     background-image:
     linear-gradient(to right top, #0000008a,#0000008a),
     url(../imgs/banner-bg.jpg);
-   
-    height: 80vh;   /* vh altura relativa */
-    width: 100vw; /* vw ancho relativo */
-    background-size:cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 80vh;   /* vh altura relativa */
+    width: 98.5vw; /* vw ancho relativo */
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     
     text-align: center;
     min-height: 400px;
 }
@@ -134,52 +202,7 @@ Importtant*/
     margin-bottom: 5vh;
 
 }
-.iniciar_sesion_btn{
-    background-color: black;
-    color: white;
-    
-    /*padding: 1vh;*/
-    border-radius: 10%;
-    text-decoration: none;
-}
 
-
-.header{
-   
-    background-color: var(--rojo);
-    font-size: 19px;
-    padding-top: 42h;
-    height:9vh;
-    width: 100vw;
-    min-height: 60px;
-    padding-bottom: 2vh;
-    
-}
-
-.header_logo{
-   /* height:5vh;*/
-    display: inline-block;
-    width:35vw;
-    margin-left: 30px;
-   /* font-size: 1rem;
-    padding: 1rem 1rem;
-    font-weight: 100;*/
-   
-}
-.header_menu{
-    /*height:10vh;
-    width: 45vw;
-    padding-top: 2vh;
-    font-size: 1rem;*/
-
-    padding-left: 6vw; 
-    display: inline-block;
-    margin-left: 10vw;
-    padding-top: 4vh;
-
-    /*margin-right: 0;*/
-   
-}
 .header_menu a:hover {
     background-color: var(--color-primario);
     background-origin: inherit;
@@ -192,17 +215,15 @@ Importtant*/
     text-decoration: none;
     color:var(--texto-blanco);
     display:inline-block;
-    padding-top: 2vh; 
+  padding-top: 2vh; 
     padding-left: 2vw;
     padding-right: 1vw;
     margin-right: 5px;
     font-size: 1em; 
     border-radius: 5px;
-    height:6vh;
+    height:5vh;
     width: 9vw;
-   
-    
-    
+  
 }
 .header_logo a{
     color:var(--texto-blanco);
@@ -222,12 +243,22 @@ Importtant*/
 }
 .busqueda{
     text-align: center;
-    height: 50vh;
+     height: 30vh;
     background-color:var(--fondo-negro) ;
     color: var(--texto-blanco);
-    padding: 20vh;
+     padding: 15vh;
     font-size: 1.5rem;
-
+    display: flex;
+    flex-direction: column;
+}
+.tendencias-pelis{
+    background-color:var(--fondo-negro) ;
+    color: var(--texto-blanco);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 6rem;
+    margin-top: 1rem;
+  
 }
 .h2 + form{
 padding-top: 5vh;
@@ -254,11 +285,128 @@ padding-top: 5vh;
     font-size: 1.1rem;
 }
 hr{
-    margin: 0 auto;
+     margin-top: 5rem;
+     border: none;
+     border-top: 1px solid var(--rojo);
 }
+
+.h2 + hr{
+    padding: 0;
+}
+
 .elemento_fijo{
 position:fixed;
 top:10px;
 left: 10px;
+}
+.contenedor-peliculas{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    gap: 5rem;
+    
+}
+.peli-imagen{
+  max-width: 90%; 
+  border-radius:1rem;
 
 }
+.titulo-tendencias{
+    margin: 3rem;
+
+}
+.pelis{
+    position: relative;
+
+}
+  /* .pelis{
+   border-radius: 10px;
+   min-height: 200px;
+   padding: 20px;
+   position: relative;
+   background-size: cover;
+    height: auto;
+   width: 50%;
+   max-width: 1200px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);}
+/* height: 80vh; 
+width: 100vw; */
+
+.botones_antSig{
+    border-color: #ffffff;
+    background-color: var(--rojo);
+    color:var(--texto-blanco);
+    border-radius: 5px; 
+    padding: 20px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+.buttons{
+    height: auto;
+    display: flex;
+    
+    width: 18vw;
+    gap:1rem;
+    margin: auto;
+}
+footer{
+  display: flex;
+    
+    
+     background-color: var(--rojo);
+     padding-top: .40rem;
+     height:15vh;
+     width: 98.5vw;
+     min-height: 60px;
+  
+    
+   
+}
+.footer-texto{
+   display: flex;
+   margin: auto;
+   max-width: 600rem; ;
+   
+   gap: 20px;
+    
+}
+.footer-texto a{
+   
+    text-decoration: none;
+    color: var(--texto-blanco);
+    display: flex;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.button-adm{
+background-color: var(--fondo-negro);
+}
+
+.contenedor-aclamadas{
+    height:70vh;
+    width: 70vw;
+    min-height: 60px;
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.pelis-aclamadas{
+    max-width: 200px;
+    display: flex;
+    gap: 20px;
+    padding-top: 4rem;
+
+}
+.titulo-aclamadas{
+    padding-top: .6px;
+    
+}
+.peli-imagen-aclamada{
+    max-width: 90%; 
+  border-radius:1rem;
+  
+  }
